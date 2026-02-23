@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5050/api",
+  baseURL: axios.get("https://zhongke-app.onrender.com/api/users"),
 });
 
 export default API;

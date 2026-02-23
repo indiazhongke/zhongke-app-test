@@ -4,14 +4,14 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
 
-const userRoutes = require("./userRoutes");
-const taskRoutes = require("./taskRoutes");
-const teamRoutes = require("./teamRoutes");
-const todoRoutes = require("./todoRoutes");
-const messageRoutes = require("./messageRoutes");
-const reportRoutes = require("./reportRoutes");
-const notificationRoutes = require("./notificationRoutes");
-const analyticsRoutes = require("./analyticsRoutes");
+const userRoutes = require("./routes/userRoutes");
+const taskRoutes = require("./routes/taskRoutes");
+const teamRoutes = require("./routes/teamRoutes");
+const todoRoutes = require("./routes/todoRoutes");
+const messageRoutes = require("./routes/messageRoutes");
+const reportRoutes = require("./routes/reportRoutes");
+const notificationRoutes = require("./routes/notificationRoutes");
+const analyticsRoutes = require("./routes/analyticsRoutes");
 
 const app = express();
 

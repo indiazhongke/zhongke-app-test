@@ -28,12 +28,7 @@ app.use("/api/notifications", notificationRoutes);
 app.use("/api/analytics", analyticsRoutes);
 
 // Serve static files in production
-app.use(express.static(path.join(__dirname, "public")));
 
-// Catch-all route for SPA - only serve index.html for non-API routes
-app.get(/^((?!api).)*$/, (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
 
 mongoose
   .connect(process.env.MONGO_URI)
